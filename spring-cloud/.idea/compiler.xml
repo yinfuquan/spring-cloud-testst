@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-member-service-impl" />
+        <module name="spring-cloud-common-base" />
+        <module name="spring-cloud-common-properties" />
+        <module name="spring-cloud-member-entity" />
+        <module name="spring-cloud-basic" />
+        <module name="spring-cloud-common-utils" />
+        <module name="spring-cloud-weixin-entity" />
+        <module name="spring-cloud-weixin-service" />
+        <module name="spring-cloud-member-service" />
+        <module name="spring-cloud-weixin-service-impl" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-cloud" target="1.8" />
+      <module name="spring-cloud-api" target="1.8" />
+      <module name="spring-cloud-api-entity" target="1.8" />
+      <module name="spring-cloud-basic" target="1.8" />
+      <module name="spring-cloud-common" target="1.8" />
+      <module name="spring-cloud-common-base" target="1.8" />
+      <module name="spring-cloud-common-properties" target="1.8" />
+      <module name="spring-cloud-common-utils" target="1.8" />
+      <module name="spring-cloud-member-entity" target="1.8" />
+      <module name="spring-cloud-member-service" target="1.8" />
+      <module name="spring-cloud-member-service-impl" target="1.8" />
+      <module name="spring-cloud-service-impl" target="1.8" />
+      <module name="spring-cloud-weixin-entity" target="1.8" />
+      <module name="spring-cloud-weixin-service" target="1.8" />
+      <module name="spring-cloud-weixin-service-impl" target="1.8" />
+      <module name="springcloudcommonbase" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-cloud" options="-parameters" />
+      <module name="spring-cloud-api" options="-parameters" />
+      <module name="spring-cloud-api-entity" options="-parameters" />
+      <module name="spring-cloud-basic" options="-parameters" />
+      <module name="spring-cloud-common" options="-parameters" />
+      <module name="spring-cloud-common-base" options="-parameters" />
+      <module name="spring-cloud-common-properties" options="-parameters" />
+      <module name="spring-cloud-common-utils" options="-parameters" />
+      <module name="spring-cloud-member-entity" options="-parameters" />
+      <module name="spring-cloud-member-service" options="-parameters" />
+      <module name="spring-cloud-member-service-impl" options="-parameters" />
+      <module name="spring-cloud-service-impl" options="-parameters" />
+      <module name="spring-cloud-weixin-entity" options="-parameters" />
+      <module name="spring-cloud-weixin-service" options="-parameters" />
+      <module name="spring-cloud-weixin-service-impl" options="-parameters" />
+      <module name="springcloudcommonbase" options="-parameters" />
+    </option>
+  </component>
+</project>
