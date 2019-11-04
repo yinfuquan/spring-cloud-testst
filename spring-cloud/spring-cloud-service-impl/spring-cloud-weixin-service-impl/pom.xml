@@ -24,6 +24,13 @@
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
         <!-- Spring Cloud End -->
+
+        <dependency>
+            <groupId>com.yin</groupId>
+            <artifactId>spring-cloud-weixin-service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
 </project>
