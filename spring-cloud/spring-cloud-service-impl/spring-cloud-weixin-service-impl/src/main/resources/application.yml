@@ -10,4 +10,13 @@ spring:
         dashboard: 192.168.252.162:8070
 server:
   port: 8011
+feign:
+  sentinel:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 
