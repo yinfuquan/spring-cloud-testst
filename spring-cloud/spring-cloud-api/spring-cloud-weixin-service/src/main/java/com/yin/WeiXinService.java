@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 public interface WeiXinService {
 
-    @GetMapping("/weixin")
+    @GetMapping("/test")
     String getWeixinInfo();
 
 }

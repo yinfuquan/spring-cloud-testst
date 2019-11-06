@@ -8,6 +8,19 @@ spring:
     sentinel:
       transport:
         dashboard: 192.168.252.162:8070
+  rabbitmq:
+    host: 192.168.252.162
+    port: 5672
+    username: rabbit
+    password: 123456
+    virtual-host: /
+    connection-timeout: 15000
+
+    publisher-confirms: true
+    publisher-returns: true
+    template:
+      mandatory: true
+    overtime: 1
 server:
   port: 8011
 feign:

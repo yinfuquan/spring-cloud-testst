@@ -1,11 +1,24 @@
 spring:
-          application:
-            name: member-service
-          cloud:
-            nacos:
-              discovery:
-                server-addr: 192.168.252.162:8848
+    application:
+      name: member-service
+    cloud:
+       nacos:
+          discovery:
+            server-addr: 192.168.252.162:8848
+    rabbitmq:
+      host: 192.168.252.162
+      port: 5672
+      username: rabbit
+      password: 123456
+      virtual-host: /
+      connection-timeout: 15000
 
+      listener:
+        simple:
+         concurrency: 8
+         max-concurrency: 10
+         acknowledge-mode: manual
+         prefetch: 1
 server:
     port: 8012
 
