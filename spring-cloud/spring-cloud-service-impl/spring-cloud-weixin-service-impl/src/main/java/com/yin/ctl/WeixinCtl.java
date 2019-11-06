@@ -1,5 +1,6 @@
 package com.yin.ctl;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.yin.WeiXinService;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class WeixinCtl implements WeiXinService {
 
     @Override
+    @SentinelResource
     public String getWeixinInfo() {
         return "weixin la ji";
     }

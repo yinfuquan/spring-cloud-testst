@@ -2,6 +2,9 @@
 #  application:
 #    name: cloud-gateway
 #  cloud:
+#    sentinel:
+#      transport:
+#        dashboard: 192.168.252.162:8070
 #    nacos:
 #      discovery:
 #        server-addr: 192.168.252.162:8848
