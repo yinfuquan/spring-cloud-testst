@@ -28,6 +28,8 @@ public class SuperGenerator {
     public static String url= "jdbc:mysql://localhost:3306/bzl_face_db?useSSL=false&characterEncoding=UTF8&allowMultiQueries=true&serverTimezone=UTC&useSSL=false";
     public static String username="root";
     public static String password ="123456";
+    public  static String database="bzl_face_db";
+
 
     /**
      * 获取TemplateConfig

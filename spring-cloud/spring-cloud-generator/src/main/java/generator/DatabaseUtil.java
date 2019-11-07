@@ -75,14 +75,17 @@ public class DatabaseUtil {
     /**
      * 获取数据库下的所有表名
      */
-    public static List<String> getTableNamesByConnection(String datbase,Connection conn) {
+    public static List<String> getTableNamesByConnection() throws SQLException {
+
+        Connection conn = DriverManager.getConnection(SuperGenerator.url, SuperGenerator.username,SuperGenerator.password);
+
         List<String> tableNames = new ArrayList<>();
         ResultSet rs = null;
         try {
 //获取数据库的元数据
             DatabaseMetaData db = conn.getMetaData();
 //从元数据中获取到所有的表名
-            rs = db.getTables(datbase, null, null, new String[]{"TABLE"});
+            rs = db.getTables(SuperGenerator.database, null, null, new String[]{"TABLE"});
             while (rs.next()) {
                 tableNames.add(rs.getString(3));
             }

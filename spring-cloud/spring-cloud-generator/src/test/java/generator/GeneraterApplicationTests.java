@@ -21,7 +21,7 @@ public class GeneraterApplicationTests {
         Connection conn = DriverManager.getConnection(SuperGenerator.url, SuperGenerator.username,SuperGenerator.password);
 
         //设置需要生成的数据库
-        List<String> tableNames = DatabaseUtil.getTableNamesByConnection("bzl_face_db", conn);
+        List<String> tableNames = DatabaseUtil.getTableNamesByConnection();
 
         tableNames.forEach(name->{
             MysqlGenerator mysqlGenerator = new MysqlGenerator();
