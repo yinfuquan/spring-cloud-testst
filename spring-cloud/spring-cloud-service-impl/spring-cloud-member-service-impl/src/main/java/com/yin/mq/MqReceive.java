@@ -50,8 +50,9 @@ public class MqReceive {
 
         /**
          * 重试需要抛出异常
+         * throw  new RuntimeException();
          */
-       // throw  new RuntimeException();
+
     }
 
 
