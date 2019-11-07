@@ -4,7 +4,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DatabaseUtilTest {
+public class DatabaseUtil {
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
     private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/bzl_face_db?useSSL=false&characterEncoding=UTF8&allowMultiQueries=true&serverTimezone=UTC&useSSL=false";
     private static final String USERNAME = "root";

@@ -1,8 +1,5 @@
 package generator;
 
-import com.baomidou.mybatisplus.generator.AutoGenerator;
-import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
-import generator.MysqlGenerator;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -22,7 +19,9 @@ public class GeneraterApplicationTests {
 
 
         Connection conn = DriverManager.getConnection(SuperGenerator.url, SuperGenerator.username,SuperGenerator.password);
-        List<String> tableNames = DatabaseUtilTest.getTableNamesByConnection("bzl_face_db", conn);
+
+        //设置需要生成的数据库
+        List<String> tableNames = DatabaseUtil.getTableNamesByConnection("bzl_face_db", conn);
 
         tableNames.forEach(name->{
             MysqlGenerator mysqlGenerator = new MysqlGenerator();
