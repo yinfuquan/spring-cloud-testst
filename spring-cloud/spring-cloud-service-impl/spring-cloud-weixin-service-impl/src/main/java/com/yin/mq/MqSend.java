@@ -3,6 +3,8 @@ package com.yin.mq;
 import com.yin.order.Order;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.core.MessagePostProcessor;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +16,18 @@ import org.springframework.stereotype.Component;
  * @description：
  * @modified By：
  */
+
+/*
+使用场景：
+
+        如果消息没有到exchange,则confirm回调,ack=false
+
+        如果消息到达exchange,则confirm回调,ack=true
+
+        exchange到queue成功,则不回调return
+
+        exchange到queue失败,则回调return(需设置mandatory=true,否则不回回调,消息就丢了)*/
+
 @Component
 public class MqSend {
 
@@ -61,6 +75,12 @@ public class MqSend {
     };
 
 
+    final RabbitTemplate.ReturnCallback returnCallback=  new RabbitTemplate.ReturnCallback(){
+        @Override
+        public void returnedMessage(Message message, int i, String s, String s1, String s2) {
+            log.info("收到回调，成功发送到消费者");
+        }
+    };
 
     /**
      * 信息投递的方法
@@ -68,20 +88,15 @@ public class MqSend {
      * @throws Exception
      */
     public void send(Order order)  {
-        //设置投递回调
-//        rabbitTemplate.setConfirmCallback((correlationData, ack, cause) -> {
-//            if (!ack) {
-//                log.info("send message failed: " + cause + correlationData.toString());
-//            }
-//        });
 
         rabbitTemplate.setConfirmCallback(confirmCallback);
-
+        rabbitTemplate.setReturnCallback(returnCallback);
         CorrelationData correlationData = new CorrelationData();
         correlationData.setId(order.getMessage_id());
         /**
          * 消息延时2秒
          */
+
         rabbitTemplate.convertAndSend("directExchangeTest", "directRoutKey",
                 order, message -> {
                     message.getMessageProperties().setMessageId("123");

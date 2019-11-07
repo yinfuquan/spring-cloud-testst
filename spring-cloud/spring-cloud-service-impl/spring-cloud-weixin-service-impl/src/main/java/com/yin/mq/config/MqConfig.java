@@ -17,7 +17,6 @@ public class MqConfig {
     @Bean
     public Queue queue(){
         return  new Queue("directQueue");
-
     }
     @Bean
     public DirectExchange directExchange(){
