@@ -18,12 +18,7 @@ public class GeneraterApplicationTests {
     public void generator() throws SQLException {
 
 
-        Connection conn = DriverManager.getConnection(SuperGenerator.url, SuperGenerator.username,SuperGenerator.password);
-
-        //设置需要生成的数据库
-        List<String> tableNames = DatabaseUtil.getTableNamesByConnection();
-
-        tableNames.forEach(name->{
+        DatabaseUtil.getTableNamesByConnection().forEach(name->{
             MysqlGenerator mysqlGenerator = new MysqlGenerator();
             mysqlGenerator.generator(name);
 
