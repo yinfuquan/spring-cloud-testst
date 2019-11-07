@@ -24,6 +24,11 @@ import java.util.*;
  */
 public class SuperGenerator {
 
+
+    public static String url= "jdbc:mysql://localhost:3306/bzl_face_db?useSSL=false&characterEncoding=UTF8&allowMultiQueries=true&serverTimezone=UTC&useSSL=false";
+    public static String username="root";
+    public static String password ="123456";
+
     /**
      * 获取TemplateConfig
      *
@@ -154,9 +159,9 @@ public class SuperGenerator {
                     }
                 })
                 .setDriverName("com.mysql.cj.jdbc.Driver")
-                .setUsername("root")
-                .setPassword("123456")
-                .setUrl("jdbc:mysql://localhost:3306/bzl_face_db?useSSL=false&characterEncoding=UTF8&allowMultiQueries=true&serverTimezone=UTC&useSSL=false");
+                .setUsername(username)
+                .setPassword(password)
+                .setUrl(url);
 //                .setUsername("bzl")
 //                .setPassword("bzl@2019")
 //                .setUrl("jdbc:mysql://10.8.202.157:3306/bzl_face_db?useSSL=false&characterEncoding=UTF8&allowMultiQueries=true");
