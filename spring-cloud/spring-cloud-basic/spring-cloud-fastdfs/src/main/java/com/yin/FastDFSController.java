@@ -34,12 +34,22 @@ public class FastDFSController {
     @Autowired
     private ThumbImageConfig thumbImageConfig;
 
+    @Autowired
+    private FastFsClient fastFsClient;
+
+    @PostMapping("test")
+    public void upload(@RequestParam("file") MultipartFile file) {
+        String path = fastFsClient.uploadFile(file);
+        System.out.println(path);
+    }
+
     /**
      * 上传图片同时生成默认大小缩略图
+     *
      * @param file
      */
     @PostMapping("img")
-    public void uploadImage(@RequestParam("file") MultipartFile file){
+    public void uploadImage(@RequestParam("file") MultipartFile file) {
         Set<MetaData> metaDataSet = new HashSet<>();
         metaDataSet.add(new MetaData("Author", "安吉小小"));
         metaDataSet.add(new MetaData("CreateDate", new Date().toString()));
@@ -65,6 +75,7 @@ public class FastDFSController {
     /**
      * 上传图片同时生成指定大小缩略图
      * 指定缩略图大小
+     *
      * @param file
      */
     @PostMapping("imgCustom")
