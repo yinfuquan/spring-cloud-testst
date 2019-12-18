@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/spring-cloud" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/spring-cloud-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/spring-cloud-api-entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/spring-cloud-api-entity/spring-cloud-member-entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/spring-cloud-api-entity/spring-cloud-weixin-entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/spring-cloud-api/spring-cloud-member-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/spring-cloud-api/spring-cloud-weixin-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/spring-cloud-basic" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/spring-cloud-basic/spring-cloud-fastdfs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/spring-cloud-basic/spring-cloud-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/spring-cloud-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/spring-cloud-common/spring-cloud-common-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/spring-cloud-common/spring-cloud-common-properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/spring-cloud-common/spring-cloud-common-utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/spring-cloud-generator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/spring-cloud-service-impl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/spring-cloud-service-impl/spring-cloud-member-service-impl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/spring-cloud-service-impl/spring-cloud-weixin-service-impl" charset="UTF-8" />
+  </component>
+</project>

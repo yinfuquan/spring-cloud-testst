@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud-api/spring-cloud-api.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud-api/spring-cloud-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud-api-entity/spring-cloud-api-entity.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud-api-entity/spring-cloud-api-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud-basic/spring-cloud-basic.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud-basic/spring-cloud-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud-common/spring-cloud-common.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud-common/spring-cloud-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud-common/spring-cloud-common-base/spring-cloud-common-base.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud-common/spring-cloud-common-base/spring-cloud-common-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud-common/spring-cloud-common-properties/spring-cloud-common-properties.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud-common/spring-cloud-common-properties/spring-cloud-common-properties.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud-common/spring-cloud-common-utils/spring-cloud-common-utils.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud-common/spring-cloud-common-utils/spring-cloud-common-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud-basic/spring-cloud-fastdfs/spring-cloud-fastdfs.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud-basic/spring-cloud-fastdfs/spring-cloud-fastdfs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud-basic/spring-cloud-gateway/spring-cloud-gateway.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud-basic/spring-cloud-gateway/spring-cloud-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud-generator/spring-cloud-generator.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud-generator/spring-cloud-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud-api-entity/spring-cloud-member-entity/spring-cloud-member-entity.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud-api-entity/spring-cloud-member-entity/spring-cloud-member-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud-api/spring-cloud-member-service/spring-cloud-member-service.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud-api/spring-cloud-member-service/spring-cloud-member-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud-service-impl/spring-cloud-member-service-impl/spring-cloud-member-service-impl.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud-service-impl/spring-cloud-member-service-impl/spring-cloud-member-service-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud-service-impl/spring-cloud-service-imp.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud-service-impl/spring-cloud-service-imp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spring-cloud-testst.iml" filepath="$PROJECT_DIR$/.idea/spring-cloud-testst.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud-api-entity/spring-cloud-weixin-entity/spring-cloud-weixin-entity.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud-api-entity/spring-cloud-weixin-entity/spring-cloud-weixin-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud-api/spring-cloud-weixin-service/spring-cloud-weixin-service.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud-api/spring-cloud-weixin-service/spring-cloud-weixin-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud-service-impl/spring-cloud-weixin-service-impl/spring-cloud-weixin-service-impl.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud-service-impl/spring-cloud-weixin-service-impl/spring-cloud-weixin-service-impl.iml" />
+    </modules>
+  </component>
+</project>
